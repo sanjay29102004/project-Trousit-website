@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #263238;
+}
+
+/* Header */
+
+header {
+    background: #073b4c;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Hero */
+
+.hero {
+    height: 550px;
+    background:
+    linear-gradient(#0008, #0008),
+    url("https://images.unsplash.com/photo-1582510003544-4d00b7f74220")
+    center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #e76f51;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d65335;
+}
+
+/* Sections */
+
+.section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.section h1,
+.section h2 {
+    margin-bottom: 30px;
+    color: #073b4c;
+}
+
+/* Destination Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 22px;
+    box-shadow: 0 4px 15px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3,
+.card h2 {
+    margin: 15px;
+}
+
+.card p {
+    padding: 5px 15px;
+    color: #65717d;
+}
+
+/* Forms */
+
+.form-container {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    margin: 70px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #073b4c;
+    margin-bottom: 25px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 13px;
+    background: #073b4c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-container button:hover {
+    background: #e76f51;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* Dashboard */
+
+.dashboard {
+    padding: 60px 7%;
+}
+
+.dashboard h1 {
+    color: #073b4c;
+    margin-bottom: 15px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #0002;
+}
+
+.dashboard-card h2 {
+    color: #073b4c;
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    background: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
